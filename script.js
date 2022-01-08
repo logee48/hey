@@ -32,10 +32,17 @@ function sendMessage(e) {
   // clear the input box
   messageInput.value = "";
 
-  //auto scroll to bottom
-  document
-    .getElementById("messages")
-    .scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+  //auto scroll to bottom   // this one doesn't work at all
+   //document
+    //.getElementById("messages")
+    //.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+
+  //auto scroll thing that i created, works perfectly fine
+  function scroll_to(div){
+   if (div.scrollTop < div.scrollHeight - div.clientHeight)
+        div.scrollTop += 10; // move down
+  }
+  scroll_to('message');
 
   // create db collection and send in the data
   db.ref("messages/" + timestamp).set({
