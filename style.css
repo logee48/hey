@@ -1,0 +1,55 @@
+.{
+  margin: 0px;
+  border: 0px;
+}
+
+#border{
+  position: absolute;
+  left: 20%;
+  background: rgb(192,192,192);
+  width: 600px;
+  height: 350px;
+  border-style: outset;
+  border-width: 5px;
+  box-shadow: 2px 5px 10px black;
+}
+
+#cancel{
+    position: absolute;
+    top: 20px;
+    left: 530px;
+    width: 50px;
+    font-size: 40px;
+    font-style: bold;
+    box-shadow: -3px 3px black, -2px 2px black, -1px 1px black;
+    border: 1px solid black;
+}
+
+#prompt_value1{
+  position: absolute;
+  left: 100px;
+  width: 400px;
+  height: 40px;
+}
+
+#one{
+  line-height: 90px;
+  text-align: left;
+  font-size: 50px;
+  background-color: rgb(4,0,161);
+  color: white;
+  height: 100px;
+}
+#two{
+  font-size: 30px;
+}
+#okbutton{
+  position: absolute;
+  left: 40%;
+  top: 70%;
+  width:130px;
+  height: 40px;
+  border-style: outset;
+  border-width: 2px;
+  box-shadow: 2px 5px 10px black;
+}
